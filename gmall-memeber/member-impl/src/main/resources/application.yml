@@ -1,0 +1,21 @@
+spring:
+  jpa:
+    database: oracle
+    show-sql: true
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:127.0.0.1:1521:orcl
+    username: upright
+    password: upright
+  dubbo:
+    base-package: com.hp.member.impl.memberimpl.service
+    registry:
+      address: 127.0.0.1:2181
+      protocol: zookeeper
+    protocol:
+      name: dubbo
+    application:
+      name: member-impl
+logging:
+  pattern:
+    level: info

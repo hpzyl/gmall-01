@@ -1,0 +1,16 @@
+spring:
+  dubbo:
+    base-package: com.hp.member.web.memberweb
+    registry:
+      address: 127.0.0.1:2181
+      protocol: zookeeper
+    protocol:
+      name: dubbo
+      port: 20885
+    application:
+      name: member-web
+    consumer:
+      timeout: 30000
+      check: false
+server:
+  port: 8087
